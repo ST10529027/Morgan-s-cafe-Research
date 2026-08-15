@@ -1,0 +1,51 @@
+MORGAN'S CAFÉ – WEBSITE SITEMAP
+
+Home
+│
+├── About Us
+│
+├── Products
+│
+├── Enquiry
+│
+└── Contact
+
+Page Structure
+
+1. Home
+   - Introduction to Morgan's Café
+   - Featured products
+   - View Menu button
+   - Make an Enquiry button
+
+2. About Us
+   - Business background
+   - Mission
+   - Vision
+   - Target audience
+
+3. Products
+   - Coffee
+   - Meals
+   - Cold Drinks
+   - Desserts
+   - Product descriptions and prices
+
+4. Enquiry
+   - Customer name
+   - Email address
+   - Phone number
+   - Enquiry type
+   - Message
+   - Submit button
+
+5. Contact
+   - Pretoria CBD branch
+   - Centurion branch
+   - Phone number
+   - Email address
+   - Opening hours
+   - Social media links
+   - Map
+
+

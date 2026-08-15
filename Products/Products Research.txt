@@ -1,0 +1,43 @@
+MORGAN'S CAFÉ – PRODUCTS RESEARCH
+
+Research purpose
+
+This research was done to prepare content for the Products page of the Morgan's Café website. The menu will give customers a clear view of the food and drinks available, together with their prices.
+
+Menu categories
+
+Coffee
+- Espresso – R25
+- Americano – R30
+- Cappuccino – R38
+- Café Latte – R42
+- Café Mocha – R45
+
+Meals
+- Breakfast Wrap – R65
+- Chicken and Cheese Toastie – R70
+- Beef Burger and Chips – R85
+- Grilled Chicken Salad – R80
+- Chicken Pasta – R90
+
+Cold Drinks
+- Fresh Orange Juice – R35
+- Iced Tea – R30
+- Iced Coffee – R45
+- Soft Drink – R25
+- Bottled Water – R20
+
+Desserts
+- Chocolate Brownie – R40
+- Cheesecake Slice – R50
+- Chocolate Cake – R45
+- Ice Cream – R35
+- Muffin – R30
+
+Content note
+
+Morgan's Café is a fictional organisation created for this website project. The menu items, descriptions and prices will be original content created for the website. Online café menus may be used to compare realistic South African pricing, but their content will not be copied.
+
+Source used for price comparison
+
+Cafenio. (2026) Our Menu. Available at: https://www.cafenio.co.za/our-menu (Accessed: 10 August 2026)

@@ -1,0 +1,373 @@
+/* ================================
+   Morgan's Café - Main Stylesheet
+   ================================ */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f0;
+    color: #3b2920;
+}
+
+/* Navigation */
+header {
+    background-color: #4b2e22;
+    padding: 15px 5%;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f6d7a7;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f6d7a7;
+}
+
+/* Hero section */
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+        linear-gradient(rgba(59, 41, 32, 0.65), rgba(59, 41, 32, 0.65)),
+        url("../Images/home/Home_Cafe.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #b86b35;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 8px 5px;
+}
+
+.button:hover {
+    background-color: #8f4f27;
+}
+
+.secondary-button {
+    background-color: #f6d7a7;
+    color: #3b2920;
+}
+
+.secondary-button:hover {
+    background-color: #e8bd82;
+}
+
+/* General sections */
+.intro,
+.featured,
+.content-section,
+.products-section,
+.form-section,
+.contact-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h2,
+.featured h2,
+.content-section h2,
+.form-section h2,
+.contact-section h2 {
+    color: #4b2e22;
+    margin-bottom: 15px;
+}
+
+/* Featured section */
+.featured {
+    text-align: center;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card,
+.product-card,
+.location-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3,
+.product-card h2,
+.location-card h3 {
+    color: #4b2e22;
+    margin-bottom: 10px;
+}
+
+/* Page headings */
+.page-heading {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ead4bd;
+}
+
+.page-heading h1 {
+    color: #4b2e22;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* About page */
+.content-section h2 {
+    margin-top: 30px;
+}
+
+.content-section h2:first-child {
+    margin-top: 0;
+}
+
+.content-section p {
+    margin-bottom: 20px;
+}
+
+/* Products */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.price {
+    color: #b86b35;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Forms */
+.form-section {
+    max-width: 800px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c9b6a5;
+    border-radius: 5px;
+    background-color: white;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Contact page */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.location-card {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #4b2e22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .featured-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .featured-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 2rem;
+    }
+
+    .intro,
+    .featured,
+    .content-section,
+    .products-section,
+    .form-section,
+    .contact-section {
+        padding: 40px 18px;
+    }
+}
+/* Website images */
+.page-heading img {
+    Display: block;
+    Width: 100%;
+    Max-width: 700px;
+    Height: 300px;
+    Object-fit: cover;
+    Margin: 25px auto;
+    Border-radius: 8px;
+}
+
+.hero img {
+    Display: none;
+}
+/* Website images */
+.page-heading img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    object-fit: cover;
+    margin: 25px auto;
+    border-radius: 8px;
+}
+
+.hero img {
+    display: none;
+}
+
+
+

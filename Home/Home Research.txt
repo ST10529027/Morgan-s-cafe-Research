@@ -1,0 +1,30 @@
+MORGAN'S CAFÉ – HOME PAGE RESEARCH
+
+Purpose of the Home Page
+
+The Home Page will be the first page visitors see when they visit the Morgan's Café website. It should give visitors a quick idea of what the café offers and make it easy for them to explore the rest of the website.
+
+Main content
+
+The homepage will include a short introduction to Morgan's Café, explaining that it is a local café where customers can enjoy food and drinks in a comfortable environment.
+
+The page will also include the Morgan's Café tagline:
+
+"Made for Good Moments."
+
+Featured content
+
+A few popular food and drink items will be shown on the homepage to give visitors an idea of what is available. These will link to the Products page where customers can view the full menu.
+
+Call to action
+
+The homepage will include a "View Menu" button that takes visitors to the Products page. A "Make an Enquiry" button will also be included so that customers can easily ask questions about the café or its products.
+
+Images
+
+A café and coffee image will be used on the homepage to create a welcoming first impression. The selected image will be saved in the Images folder and its source will be recorded.
+
+Content note
+
+The homepage content will be original content created for the fictional Morgan's Café website. It will be kept short and clear so that visitors can quickly understand what the café offers.
+

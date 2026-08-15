@@ -1,0 +1,32 @@
+Morgan's Café – Enquiry Page Research
+
+Purpose of the Enquiry Page
+
+The Enquiry page will give customers a simple way to contact Morgan's Café before visiting the business. Customers can use the form to ask questions about the menu, products, availability, branches, or any other information they need.
+Enquiry Form
+The form will include the following fields:
+•	Full Name
+•	Email Address
+•	Phone Number
+•	Enquiry Type
+•	Message
+•	Submit Button
+
+The form will use basic HTML validation to make sure that important information, such as the customer's name and email address, is completed before the form can be submitted.
+
+Enquiry Types
+
+Customers will be able to make enquiries about:
+•	Menu items
+•	Product availability
+•	Branch information
+•	General questions
+•	Other enquiries
+
+User Experience
+
+The form will be kept simple so that customers do not have to enter unnecessary information. Clear labels will be used for each field, and the layout will be easy to understand on both computers and mobile devices.
+Content Note
+The enquiry content and form questions are original content created for the fictional Morgan's Café website. They are based on the type of information customers would realistically need when contacting a café.
+
+

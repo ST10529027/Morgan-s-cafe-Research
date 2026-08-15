@@ -1,0 +1,37 @@
+Contact Page Research
+
+The Contact page will give customers the information they need to contact Morgan's Café and visit one of the branches.
+Contact Details
+
+Phone: +27 12 345 6789
+Email: info@morganscafe.co.za
+
+Branches
+
+Pretoria CBD Branch
+150 Helen Joseph Street,
+Pretoria Central, Pretoria,
+0002
+Centurion Branch
+Unit 12, Centurion Mall,
+123 Jean Avenue,
+Centurion, 0157
+
+Opening Hours
+
+Monday – Friday: 08:00 – 21:00
+Saturday: 09:00 – 22:00
+Sunday: 09:00 – 20:00
+
+Social Media
+
+The Contact page will include social media links so customers can follow Morgan's Café and keep up with updates, promotions and new products.
+
+Map
+
+A map will be included on the Contact page to help customers find the branches. The map section will be placed next to the contact details, following the layout shown in the wireframe.
+
+Design
+
+The Contact page will use a simple layout with the location information on the left and the contact details on the right. The navigation bar will remain at the top of the page, while the footer will contain quick links, opening hours and social media links.
+
