@@ -52,7 +52,10 @@ header {
     color: #f6d7a7;
 }
 
-/* Hero section */
+/* ================================
+   Home Hero Section
+   ================================ */
+
 .hero {
     min-height: 550px;
     display: flex;
@@ -60,11 +63,17 @@ header {
     justify-content: center;
     text-align: center;
     padding: 60px 20px;
+
     background:
-        linear-gradient(rgba(59, 41, 32, 0.65), rgba(59, 41, 32, 0.65)),
+        linear-gradient(
+            rgba(59, 41, 32, 0.65),
+            rgba(59, 41, 32, 0.65)
+        ),
         url("../Images/home/Home_Cafe.jpg.jpg");
+
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -83,6 +92,13 @@ header {
 }
 
 /* Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .button {
     display: inline-block;
     background-color: #b86b35;
@@ -109,7 +125,10 @@ header {
     background-color: #e8bd82;
 }
 
-/* General sections */
+/* ================================
+   General Sections
+   ================================ */
+
 .intro,
 .featured,
 .content-section,
@@ -134,7 +153,102 @@ header {
     margin-bottom: 15px;
 }
 
-/* Featured section */
+/* ================================
+   Page Headings
+   ================================ */
+
+.page-heading {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ead4bd;
+}
+
+.page-heading h1 {
+    color: #4b2e22;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: #3b2920;
+}
+
+/* ================================
+   About Us Background
+   ================================ */
+
+.about-heading {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(59, 41, 32, 0.20),
+            rgba(59, 41, 32, 0.20)
+        ),
+        url("../Images/About_us/About_us_Cafe.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-heading h1,
+.about-heading p {
+    color: white;
+}
+
+/* ================================
+   Products Background
+   ================================ */
+
+.products-heading {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(59, 41, 32, 0.20),
+            rgba(59, 41, 32, 0.20)
+        ),
+        url("../Images/products/products_Cafe.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.products-heading h1,
+.products-heading p {
+    color: white;
+}
+
+/* ================================
+   About Page
+   ================================ */
+
+.content-section h2 {
+    margin-top: 30px;
+}
+
+.content-section h2:first-child {
+    margin-top: 0;
+}
+
+.content-section p {
+    margin-bottom: 20px;
+}
+
+/* ================================
+   Featured Section
+   ================================ */
+
 .featured {
     text-align: center;
 }
@@ -162,33 +276,10 @@ header {
     margin-bottom: 10px;
 }
 
-/* Page headings */
-.page-heading {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #ead4bd;
-}
+/* ================================
+   Products
+   ================================ */
 
-.page-heading h1 {
-    color: #4b2e22;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-/* About page */
-.content-section h2 {
-    margin-top: 30px;
-}
-
-.content-section h2:first-child {
-    margin-top: 0;
-}
-
-.content-section p {
-    margin-bottom: 20px;
-}
-
-/* Products */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -206,7 +297,10 @@ header {
     margin-top: 15px;
 }
 
-/* Forms */
+/* ================================
+   Forms
+   ================================ */
+
 .form-section {
     max-width: 800px;
 }
@@ -242,7 +336,10 @@ button {
     font-family: inherit;
 }
 
-/* Contact page */
+/* ================================
+   Contact Page
+   ================================ */
+
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -263,7 +360,10 @@ button {
     margin-bottom: 5px;
 }
 
-/* Footer */
+/* ================================
+   Footer
+   ================================ */
+
 footer {
     background-color: #4b2e22;
     color: white;
@@ -272,7 +372,10 @@ footer {
     margin-top: 30px;
 }
 
-/* Tablet */
+/* ================================
+   Tablet
+   ================================ */
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -294,6 +397,11 @@ footer {
         font-size: 2.2rem;
     }
 
+    .about-heading,
+    .products-heading {
+        min-height: 350px;
+    }
+
     .featured-grid,
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -304,7 +412,10 @@ footer {
     }
 }
 
-/* Mobile */
+/* ================================
+   Mobile
+   ================================ */
+
 @media (max-width: 500px) {
 
     .nav-links {
@@ -322,13 +433,19 @@ footer {
         font-size: 1.9rem;
     }
 
-    .featured-grid,
-    .product-grid {
-        grid-template-columns: 1fr;
+    .about-heading,
+    .products-heading {
+        min-height: 300px;
+        padding: 40px 15px;
     }
 
     .page-heading h1 {
         font-size: 2rem;
+    }
+
+    .featured-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
     }
 
     .intro,
@@ -340,34 +457,3 @@ footer {
         padding: 40px 18px;
     }
 }
-/* Website images */
-.page-heading img {
-    Display: block;
-    Width: 100%;
-    Max-width: 700px;
-    Height: 300px;
-    Object-fit: cover;
-    Margin: 25px auto;
-    Border-radius: 8px;
-}
-
-.hero img {
-    Display: none;
-}
-/* Website images */
-.page-heading img {
-    display: block;
-    width: 100%;
-    max-width: 700px;
-    height: 300px;
-    object-fit: cover;
-    margin: 25px auto;
-    border-radius: 8px;
-}
-
-.hero img {
-    display: none;
-}
-
-
-
