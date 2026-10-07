@@ -1,66 +1,78 @@
 /* ================================
-   Morgan's Café - Main Stylesheet
+   Morgan’s Café – Main Stylesheet
+   WEDE5020 Formative Part 2
    ================================ */
 
+/* ================================
+         References & Sources
+   ================================
+   - MDN Web Docs (2026) CSS Grid Layout Guide. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+   - MDN Web Docs (2026) Responsive Web Design & Media Queries. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries
+   - W3C (2026) Web Content Accessibility Guidelines (WCAG) 2.1 – Form Controls. Available at: https://www.w3.org/TR/WCAG21/
+*/
+
 /* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+•	{
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #fff8f0;
-    color: #3b2920;
+Body {
+    Font-family: Arial, Helvetica, sans-serif;
+    Line-height: 1.6;
+    Background-color: #fff8f0;
+    Color: #3b2920;
 }
 
-/* Navigation */
-header {
-    background-color: #4b2e22;
-    padding: 15px 5%;
+/* ================================
+   Navigation
+   ================================ */
+
+Header {
+    Background-color: #4b2e22;
+    Padding: 15px 5%;
 }
 
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    Max-width: 1200px;
+    Margin: 0 auto;
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
 }
 
 .logo {
-    color: #f6d7a7;
-    font-size: 1.6rem;
-    font-weight: bold;
+    Color: #f6d7a7;
+    Font-size: 1.6rem;
+    Font-weight: bold;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
+    Display: flex;
+    List-style: none;
+    Gap: 25px;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px;
-    transition: color 0.2s ease;
+    Color: white;
+    Text-decoration: none;
+    Font-weight: bold;
+    Padding: 5px;
+    Transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #f6d7a7;
+    Color: #f6d7a7;
 }
 
 .nav-links a:focus {
-    outline: 2px solid #f6d7a7;
-    outline-offset: 3px;
+    Outline: 2px solid #f6d7a7;
+    Outline-offset: 3px;
 }
 
 .nav-links a:active {
-    color: #e8bd82;
+    Color: #e8bd82;
 }
 
 /* ================================
@@ -68,98 +80,98 @@ header {
    ================================ */
 
 .hero {
-    min-height: 550px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 60px 20px;
-    overflow: hidden;
-    background-color: #3b2920;
+    Min-height: 550px;
+    Position: relative;
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    Text-align: center;
+    Padding: 60px 20px;
+    Overflow: hidden;
+    Background-color: #3b2920;
 }
 
 .hero-image {
-    position: absolute;
-    inset: 0;
+    Position: absolute;
+    Inset: 0;
     z-index: 0;
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    Width: 100%;
+    Height: 100%;
+    Object-fit: cover;
+    Object-position: center;
+    Display: block;
 }
 
 .hero-image::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(59, 41, 32, 0.65);
+    Content: “”;
+    Position: absolute;
+    Inset: 0;
+    Background: rgba(59, 41, 32, 0.65);
 }
 
 .hero-content {
-    position: relative;
+    Position: relative;
     z-index: 1;
     max-width: 750px;
     color: white;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    Font-size: 3rem;
+    Margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.15rem;
-    margin-bottom: 1rem;
+    Font-size: 1.15rem;
+    Margin-bottom: 1rem;
 }
 
 /* Buttons */
 .hero-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    Display: flex;
+    Justify-content: center;
+    Align-items: center;
+    Flex-wrap: wrap;
 }
 
 .button {
-    display: inline-block;
-    background-color: #b86b35;
-    color: white;
-    padding: 0.75rem 1.4rem;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 8px 5px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    Display: inline-block;
+    Background-color: #b86b35;
+    Color: white;
+    Padding: 0.75rem 1.4rem;
+    Border: none;
+    Border-radius: 5px;
+    Text-decoration: none;
+    Cursor: pointer;
+    Font-weight: bold;
+    Margin: 8px 5px;
+    Transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover {
-    background-color: #8f4f27;
-    transform: translateY(-2px);
+    Background-color: #8f4f27;
+    Transform: translateY(-2px);
 }
 
 .button:focus {
-    outline: 2px solid #f6d7a7;
-    outline-offset: 3px;
+    Outline: 2px solid #f6d7a7;
+    Outline-offset: 3px;
 }
 
 .button:active {
-    transform: translateY(0);
+    Transform: translateY(0);
 }
 
 .secondary-button {
-    background-color: #f6d7a7;
-    color: #3b2920;
+    Background-color: #f6d7a7;
+    Color: #3b2920;
 }
 
 .secondary-button:hover {
-    background-color: #e8bd82;
+    Background-color: #e8bd82;
 }
 
 /* ================================
@@ -172,13 +184,13 @@ header {
 .products-section,
 .form-section,
 .contact-section {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3.75rem 2rem;
+    Max-width: 1100px;
+    Margin: 0 auto;
+    Padding: 3.75rem 2rem;
 }
 
 .intro {
-    text-align: center;
+    Text-align: center;
 }
 
 .intro h2,
@@ -186,8 +198,8 @@ header {
 .content-section h2,
 .form-section h2,
 .contact-section h2 {
-    color: #4b2e22;
-    margin-bottom: 1rem;
+    Color: #4b2e22;
+    Margin-bottom: 1rem;
 }
 
 /* ================================
@@ -195,19 +207,19 @@ header {
    ================================ */
 
 .page-heading {
-    text-align: center;
-    padding: 3.75rem 1.25rem;
-    background-color: #ead4bd;
+    Text-align: center;
+    Padding: 3.75rem 1.25rem;
+    Background-color: #ead4bd;
 }
 
 .page-heading h1 {
-    color: #4b2e22;
-    font-size: 2.5rem;
-    margin-bottom: 0.6rem;
+    Color: #4b2e22;
+    Font-size: 2.5rem;
+    Margin-bottom: 0.6rem;
 }
 
 .page-heading p {
-    color: #3b2920;
+    Color: #3b2920;
 }
 
 /* ================================
@@ -215,18 +227,18 @@ header {
    ================================ */
 
 .about-heading {
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    Min-height: 400px;
+    Display: flex;
+    Flex-direction: column;
+    Align-items: center;
+    Justify-content: center;
 
-    background:
-        linear-gradient(
-            rgba(59, 41, 32, 0.20),
-            rgba(59, 41, 32, 0.20)
+    Background:
+        Linear-gradient(
+            Rgba(59, 41, 32, 0.20),
+            Rgba(59, 41, 32, 0.20)
         ),
-        url("../Images/About_us/About_us_Cafe.jpg");
+        url("./Images/About_us/About_us_Cafe.jpg");
 
     background-size: cover;
     background-position: center;
@@ -235,7 +247,7 @@ header {
 
 .about-heading h1,
 .about-heading p {
-    color: white;
+    Color: white;
 }
 
 /* ================================
@@ -243,18 +255,18 @@ header {
    ================================ */
 
 .products-heading {
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    Min-height: 400px;
+    Display: flex;
+    Flex-direction: column;
+    Align-items: center;
+    Justify-content: center;
 
-    background:
-        linear-gradient(
-            rgba(59, 41, 32, 0.20),
-            rgba(59, 41, 32, 0.20)
+    Background:
+        Linear-gradient(
+            Rgba(59, 41, 32, 0.20),
+            Rgba(59, 41, 32, 0.20)
         ),
-        url("../Images/products/products_Cafe.jpg");
+        url("./Images/products/products_Cafe.jpg");
 
     background-size: cover;
     background-position: center;
@@ -263,7 +275,7 @@ header {
 
 .products-heading h1,
 .products-heading p {
-    color: white;
+    Color: white;
 }
 
 /* ================================
@@ -271,15 +283,15 @@ header {
    ================================ */
 
 .content-section h2 {
-    margin-top: 1.9rem;
+    Margin-top: 1.9rem;
 }
 
 .content-section h2:first-child {
-    margin-top: 0;
+    Margin-top: 0;
 }
 
 .content-section p {
-    margin-bottom: 1.25rem;
+    Margin-bottom: 1.25rem;
 }
 
 /* ================================
@@ -287,83 +299,216 @@ header {
    ================================ */
 
 .featured {
-    text-align: center;
+    Text-align: center;
 }
 
 .featured-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
-    margin-top: 1.9rem;
+    Display: grid;
+    Grid-template-columns: repeat(3, 1fr);
+    Gap: 1.6rem;
+    Margin-top: 1.9rem;
 }
 
 .card,
 .product-card,
 .location-card {
-    background-color: white;
-    padding: 1.6rem;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    Background-color: white;
+    Padding: 1.6rem;
+    Border-radius: 8px;
+    Box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    Transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover,
 .product-card:hover,
 .location-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
+    Transform: translateY(-3px);
+    Box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
 }
 
 .card h3,
 .product-card h2,
+.product-card h3,
 .location-card h3 {
-    color: #4b2e22;
-    margin-bottom: 0.6rem;
+    Color: #4b2e22;
+    Margin-bottom: 0.6rem;
 }
 
 /* ================================
-   Products
+   Products Grid
    ================================ */
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
+    Display: grid;
+    Grid-template-columns: repeat(3, 1fr);
+    Gap: 1.6rem;
 }
 
 .product-card {
-    text-align: center;
+    Text-align: center;
 }
 
 .price {
-    color: #b86b35;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 1rem;
+    Color: #b86b35;
+    Font-size: 1.2rem;
+    Font-weight: bold;
+    Margin-top: 1rem;
 }
 
 /* ================================
-   Forms
+   Contact Page Layout
+   ================================ */
+
+.contact-section {
+    Display: grid;
+    Grid-template-columns: repeat(2, 1fr);
+    Gap: 2rem;
+}
+
+.locations {
+    Display: flex;
+    Flex-direction: column;
+    Gap: 1rem;
+}
+
+/* ================================
+   Forms (Enhanced & Fully Styled)
    ================================ */
 
 .form-section {
-    max-width: 800px;
+    Max-width: 800px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+Form {
+    Display: flex;
+    Flex-direction: column;
 }
 
-label {
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
+Label {
+    Font-weight: bold;
+    Margin-top: 1rem;
+    Margin-bottom: 0.3rem;
+    Color: #4b2e22;
 }
 
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 0;
+Input,
+Select,
+Textarea {
+    Width: 100%;
+    Padding: 0.75rem 1rem;
+    Border: 1px solid #ccc;
+    Border-radius: 5px;
+    Font-family: inherit;
+    Font-size: 1rem;
+    Margin-top: 0.2rem;
+    Background-color: #ffffff;
+    Transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+Input:focus,
+Select:focus,
+Textarea:focus {
+    Outline: none;
+    Border-color: #b86b35;
+    Box-shadow: 0 0 0 3px rgba(184, 107, 53, 0.25);
+}
+
+Textarea {
+    Min-height: 120px;
+    Resize: vertical;
+}
+
+/* ================================
+   Footer Styling
+   ================================ */
+
+Footer {
+    Background-color: #4b2e22;
+    Color: #f6d7a7;
+    Text-align: center;
+    Padding: 1.5rem 1rem;
+    Margin-top: 3rem;
+}
+
+Footer a {
+    Color: #ffffff;
+    Text-decoration: underline;
+}
+
+Footer a:hover {
+    Color: #f6d7a7;
+}
+
+/* ================================
+   Responsive Media Queries
+   ================================ */
+
+/* Tablet Breakpoint (Up to 900px) */
+@media (max-width: 900px) {
+    .featured-grid,
+    .product-grid {
+        Grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section {
+        Grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        Font-size: 2.2rem;
+    }
+}
+
+/* Mobile Breakpoint (Up to 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        Flex-direction: column;
+        Gap: 15px;
+        Text-align: center;
+    }
+
+    .nav-links {
+        Flex-direction: column;
+        Gap: 12px;
+        Align-items: center;
+        Width: 100%;
+    }
+
+    .nav-links li {
+        Width: 100%;
+        Text-align: center;
+    }
+
+    .nav-links a {
+        Display: block;
+        Padding: 8px;
+    }
+
+    .hero h1 {
+        Font-size: 2rem;
+    }
+
+    .hero p {
+        Font-size: 1rem;
+    }
+
+    .page-heading h1 {
+        Font-size: 1.8rem;
+    }
+
+    .featured-grid,
+    .product-grid {
+        Grid-template-columns: 1fr;
+    }
+
+    .intro,
+    .featured,
+    .content-section,
+    .products-section,
+    .form-section,
+    .contact-section {
+        Padding: 2.5rem 1.25rem;
+    }
+}
+
+
