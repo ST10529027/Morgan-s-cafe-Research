@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-    References & Sources
-    - MDN Web Docs (2026) HTML Structural Elements. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-    - W3C (2026) HTML5 Semantic Markup Specification. Available at: https://www.w3.org/TR/html52/
+    Morgan's Café - Products Page
+    Module: WEDE5020 - Web Development (Introduction)
+    Formative Part 3
+
+    References:
+    - MDN Web Docs (2026) HTML Elements.
+      Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    - W3C (2017) HTML 5.2 Specification.
+      Available at: https://www.w3.org/TR/html52/
 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View the food and drinks available at Morgan's Café.">
+
+    <meta name="description"
+          content="Explore Morgan's Café products, including freshly prepared coffee, breakfast, lunch meals, cold drinks and desserts.">
+
+    <meta name="keywords"
+          content="Morgan's Café, coffee, breakfast, lunch, cold drinks, desserts, specialty coffee">
+
+    <meta name="author" content="Morgan's Café">
+
     <title>Morgan's Café | Products</title>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -17,13 +32,13 @@
 
     <!-- Navigation -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
             <div class="logo">Morgan's Café</div>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
                 <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -33,65 +48,185 @@
     <!-- Main Content -->
     <main>
 
+        <!-- Products Page Heading -->
         <section class="page-heading products-heading">
             <h1>Our Products</h1>
             <p>Good food and drinks made for good moments.</p>
         </section>
 
+        <!-- Products Section -->
         <section class="products-section">
 
-            <div class="product-grid">
+            <div class="content-section">
 
-                <article class="product-card">
-                    <h3>Fresh Coffee</h3>
-                    <p>
-                        Freshly prepared coffee for your morning or
-                        afternoon break.
-                    </p>
-                    <p class="price">R35.00</p>
-                </article>
+                <h2>Explore Our Menu</h2>
 
-                <article class="product-card">
-                    <h3>Breakfast</h3>
-                    <p>
-                        A tasty breakfast option to help you start
-                        your day.
-                    </p>
-                    <p class="price">R65.00</p>
-                </article>
+                <p>
+                    Discover our selection of coffee, meals, refreshing
+                    drinks and sweet treats. Use the search and price
+                    filters below to find what you are looking for.
+                </p>
 
-                <article class="product-card">
-                    <h3>Lunch Meal</h3>
-                    <p>
-                        A filling café meal that is perfect for lunch.
-                    </p>
-                    <p class="price">R85.00</p>
-                </article>
+                <!-- Product Search and Filters -->
+                <div class="product-controls">
 
-                <article class="product-card">
-                    <h3>Cold Drinks</h3>
-                    <p>
-                        A selection of refreshing cold drinks.
-                    </p>
-                    <p class="price">R30.00</p>
-                </article>
+                    <label for="productSearch">Search Products</label>
 
-                <article class="product-card">
-                    <h3>Dessert</h3>
-                    <p>
-                        A sweet treat to enjoy with your favourite drink.
-                    </p>
-                    <p class="price">R45.00</p>
-                </article>
+                    <input
+                        type="search"
+                        id="productSearch"
+                        placeholder="Search coffee, breakfast..."
+                        autocomplete="off"
+                        aria-label="Search products by name or description">
 
-                <article class="product-card">
-                    <h3>Specialty Coffee</h3>
-                    <p>
-                        A richer coffee option for customers who want
-                        something special.
-                    </p>
-                    <p class="price">R50.00</p>
-                </article>
+                    <label for="priceFilter">Filter by Price</label>
+
+                    <select id="priceFilter">
+                        <option value="all">All Prices</option>
+                        <option value="30">R30 and below</option>
+                        <option value="50">R50 and below</option>
+                        <option value="70">R70 and below</option>
+                        <option value="100">R100 and below</option>
+                    </select>
+
+                    <button type="button" id="clearFilters">
+                        Clear Filters
+                    </button>
+
+                </div>
+
+                <!-- Search Results Status -->
+                <p
+                    id="resultsCount"
+                    class="results-count"
+                    role="status"
+                    aria-live="polite">
+                    Showing 6 products.
+                </p>
+
+                <!-- No Results Message -->
+                <p id="noResults" class="no-results" hidden>
+                    No products found. Try another search or price filter.
+                </p>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="productGrid">
+
+                    <!-- Fresh Coffee -->
+                    <article class="product-card">
+                        <img
+                            src="Images/products/fresh-coffee.jpg"
+                            alt="Freshly prepared coffee served in a cup"
+                            loading="lazy"
+                            width="400"
+                            height="300">
+
+                        <h3>Fresh Coffee</h3>
+
+                        <p>
+                            Freshly prepared coffee for your morning
+                            or afternoon break.
+                        </p>
+
+                        <p class="price">R35.00</p>
+                    </article>
+
+                    <!-- Breakfast -->
+                    <article class="product-card">
+                        <img
+                            src="Images/products/breakfast.jpg"
+                            alt="A tasty breakfast meal"
+                            loading="lazy"
+                            width="400"
+                            height="300">
+
+                        <h3>Breakfast</h3>
+
+                        <p>
+                            A tasty breakfast option to help you
+                            start your day.
+                        </p>
+
+                        <p class="price">R65.00</p>
+                    </article>
+
+                    <!-- Lunch Meal -->
+                    <article class="product-card">
+                        <img
+                            src="Images/products/lunch-meal.jpg"
+                            alt="A freshly prepared lunch meal"
+                            loading="lazy"
+                            width="400"
+                            height="300">
+
+                        <h3>Lunch Meal</h3>
+
+                        <p>
+                            A filling café meal that is perfect
+                            for lunch.
+                        </p>
+
+                        <p class="price">R85.00</p>
+                    </article>
+
+                    <!-- Cold Drinks -->
+                    <article class="product-card">
+                        <img
+                            src="Images/products/cold-drinks.jpg"
+                            alt="Refreshing cold drinks"
+                            loading="lazy"
+                            width="400"
+                            height="300">
+
+                        <h3>Cold Drinks</h3>
+
+                        <p>
+                            A selection of refreshing cold drinks
+                            to enjoy throughout the day.
+                        </p>
+
+                        <p class="price">R30.00</p>
+                    </article>
+
+                    <!-- Dessert -->
+                    <article class="product-card">
+                        <img
+                            src="Images/products/dessert.jpg"
+                            alt="A sweet dessert to enjoy with a drink"
+                            loading="lazy"
+                            width="400"
+                            height="300">
+
+                        <h3>Dessert</h3>
+
+                        <p>
+                            A sweet treat to enjoy with your
+                            favourite drink.
+                        </p>
+
+                        <p class="price">R45.00</p>
+                    </article>
+
+                    <!-- Specialty Coffee -->
+                    <article class="product-card">
+                        <img
+                            src="Images/products/specialty-coffee.jpg"
+                            alt="A specially prepared cup of coffee"
+                            loading="lazy"
+                            width="400"
+                            height="300">
+
+                        <h3>Specialty Coffee</h3>
+
+                        <p>
+                            A richer coffee option for customers
+                            who want something special.
+                        </p>
+
+                        <p class="price">R50.00</p>
+                    </article>
+
+                </div>
 
             </div>
 
@@ -104,7 +239,8 @@
         <p>&copy; 2026 Morgan's Café. Made for Good Moments.</p>
     </footer>
 
+    <!-- Website JavaScript -->
+    <script src="js/script.js" defer></script>
+
 </body>
 </html>
-
-

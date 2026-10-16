@@ -1,70 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <!--
-     References & Sources
-    - MDN Web Docs (2026) HTML Structural Elements. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-    - W3C (2026) HTML5 Form Controls & Accessibility Guidelines. Available at: https://www.w3.org/TR/WCAG21/
+    References & Sources
+    - MDN Web Docs (2026) HTML Structural Elements.
+      Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    - W3C (2026) HTML Form Controls & Accessibility Guidelines.
+      Available at: https://www.w3.org/TR/WCAG21/
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Make an enquiry with Morgan's Café.">
+
+    <meta
+        name="description"
+        content="Make an enquiry with Morgan's Café about our menu, product availability, branches and services. We look forward to hearing from you."
+    >
+
+    <meta
+        name="keywords"
+        content="Morgan's Café, café enquiry, menu enquiries, product availability, Pretoria café"
+    >
+
+    <meta name="author" content="Morgan's Café">
+
     <title>Morgan's Café | Enquiry</title>
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- Website Navigation -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
+
             <div class="logo">Morgan's Café</div>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
+                <li>
+                    <a href="enquiry.html" aria-current="page">Enquiry</a>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
 
-        <section class="page-heading">
+        <!-- Page Heading -->
+        <section class="page-heading enquiry-heading">
             <h1>Make an Enquiry</h1>
-            <p>Have a question? Send us a message.</p>
+            <p>Have a question? We are happy to help.</p>
         </section>
 
+        <!-- Enquiry Information -->
         <section class="form-section">
 
-            <form id="enquiryForm">
+            <h2>How Can We Help You?</h2>
 
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+            <p>
+                Use the form below to ask about our menu, product availability,
+                branches or any other café-related question. Please provide
+                accurate information so that we can respond appropriately.
+            </p>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+            <p>Fields marked with * are required.</p>
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+            <!-- Enquiry Form -->
+            <form id="enquiryForm" action="#" method="post">
 
-                <label for="enquiryType">Enquiry Type</label>
-                <select id="enquiryType" name="enquiryType" required>
+                <!-- Full Name -->
+                <label for="name">Full Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    minlength="2"
+                    maxlength="80"
+                    required
+                >
+
+                <!-- Email Address -->
+                <label for="email">Email Address *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    maxlength="120"
+                    required
+                >
+
+                <!-- Phone Number -->
+                <label for="phone">Phone Number *</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="e.g. 0712345678"
+                    autocomplete="tel"
+                    pattern="[0-9 +()-]{7,20}"
+                    title="Enter a phone number using 7 to 20 digits or phone-number characters."
+                    required
+                >
+
+                <!-- Enquiry Category -->
+                <label for="enquiryType">Enquiry Type *</label>
+                <select
+                    id="enquiryType"
+                    name="enquiryType"
+                    required
+                >
                     <option value="">Select an option</option>
                     <option value="menu">Menu Items</option>
                     <option value="availability">Product Availability</option>
                     <option value="branch">Branch Information</option>
+                    <option value="services">Services and Events</option>
+                    <option value="volunteer">Volunteering</option>
+                    <option value="sponsor">Sponsorship</option>
                     <option value="general">General Question</option>
                     <option value="other">Other</option>
                 </select>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <!-- Enquiry Message -->
+                <label for="message">Your Enquiry *</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Tell us what you would like to know"
+                    minlength="10"
+                    maxlength="2000"
+                    required
+                ></textarea>
 
-                <button type="submit" class="button">Submit Enquiry</button>
+                <!-- Submit Button -->
+                <button type="submit" class="button">
+                    Submit Enquiry
+                </button>
+
+                <!-- Accessible JavaScript Response -->
+                <p
+                    id="enquiry-form-status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
 
             </form>
 
@@ -72,10 +162,16 @@
 
     </main>
 
-    <!-- Footer -->
+    <!-- Website Footer -->
     <footer>
         <p>&copy; 2026 Morgan's Café. Made for Good Moments.</p>
     </footer>
 
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
+
 </body>
 </html>
+
+

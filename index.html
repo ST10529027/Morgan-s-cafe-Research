@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
+    Morgan's Café - Home Page
+    Module: WEDE5020 - Web Development (Introduction)
+    Formative Part 3
+
     Academic References & Source Citations:
-    - MDN Web Docs (2026) HTML Structural Elements. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-    - MDN Web Docs (2026) Responsive Images (<picture> element). Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
+    - MDN Web Docs (2026) HTML Structural Elements.
+      Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    - MDN Web Docs (2026) HTML Video Element.
+      Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+    - MDN Web Docs (2026) Responsive Images.
+      Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Morgan's Café - Made for Good Moments.">
+
+    <meta name="description"
+          content="Visit Morgan's Café for quality coffee, delicious meals and sweet treats. Made for Good Moments.">
+
+    <meta name="theme-color" content="#4b2e20">
+
     <title>Morgan's Café | Home</title>
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -17,37 +33,46 @@
 
     <!-- Main Navigation -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main navigation">
+
             <div class="logo">Morgan's Café</div>
 
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <!-- Home Page Content -->
+    <!-- Main Page Content -->
     <main>
 
+        <!-- Hero Section with Background Video -->
         <section class="hero">
 
-            <picture class="hero-image">
-                <source media="(max-width: 500px)" srcset="Images/home/Home_Cafe.jpg.jpg">
-                <source media="(max-width: 768px)" srcset="Images/home/Home_Cafe.jpg.jpg">
-                <img src="Images/home/Home_Cafe.jpg.jpg"
-                     alt="Morgan's Café interior layout"
-                     loading="eager">
-            </picture>
+            <video class="hero-video"
+                   autoplay
+                   muted
+                   loop
+                   playsinline
+                   preload="metadata"
+                   aria-hidden="true">
 
+                <source src="videos/promotion-video.mp4" type="video/mp4">
+
+                Your browser does not support HTML video.
+            </video>
+
+            <!-- Hero Text and Buttons -->
             <div class="hero-content">
 
                 <h1>Welcome to Morgan's Café</h1>
 
-                <p>Made for Good Moments.</p>
+                <p class="hero-tagline">Made for Good Moments.</p>
 
                 <p>
                     Enjoy good food, quality drinks and a comfortable
@@ -55,14 +80,24 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="products.html" class="button">View Menu</a>
-                    <a href="enquiry.html" class="button secondary-button">Make an Enquiry</a>
+
+                    <a href="products.html" class="button">
+                        View Menu
+                    </a>
+
+                    <a href="enquiry.html" class="button secondary-button">
+                        Make an Enquiry
+                    </a>
+
                 </div>
 
             </div>
+
         </section>
 
+        <!-- Introduction Section -->
         <section class="intro">
+
             <h2>Good Food. Good Drinks. Good Moments.</h2>
 
             <p>
@@ -72,46 +107,65 @@
                 break or looking for somewhere to relax, Morgan's Café
                 is made for good moments.
             </p>
+
         </section>
 
+        <!-- Featured Items Section -->
         <section class="featured">
+
             <h2>Featured at Morgan's Café</h2>
 
             <div class="featured-grid">
 
                 <article class="card">
+
                     <h3>Fresh Coffee</h3>
+
                     <p>
                         Enjoy freshly prepared coffee made for your
                         morning, afternoon or whenever you need a break.
                     </p>
+
                 </article>
 
                 <article class="card">
+
                     <h3>Meals</h3>
+
                     <p>
                         Choose from a selection of meals made to give
                         customers a satisfying café experience.
                     </p>
+
                 </article>
 
                 <article class="card">
+
                     <h3>Sweet Treats</h3>
+
                     <p>
                         Treat yourself to something sweet while enjoying
                         your favourite drink.
                     </p>
+
                 </article>
 
             </div>
+
         </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- Website Footer -->
     <footer>
+
         <p>&copy; 2026 Morgan's Café. Made for Good Moments.</p>
+
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
+
