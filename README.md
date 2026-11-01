@@ -1,16 +1,19 @@
 Morgan's Café Website
+
 Student Information
-Student Name: Wandile Morgan Mhlanga
-Student Number: ST10529027
-Module: WEDE5020 – Web Development (Introduction)
-Group: Group 2
-Project: Morgan's Café
+•	Student Name: Wandile Morgan Mhlanga
+•	Student Number: ST10529027
+•	Module: WEDE5020 – Web Development (Introduction)
+•	Group: Group 2
+•	Project: Morgan's Café Website
 
 Project Overview
 
-Morgan's Café is a local café website created as part of the WEDE5020 Web Development (Introduction) project. The website is designed to give customers information about the café, its products, contact details and enquiry options. The website provides a simple and welcoming online presence for Morgan's Café. It allows visitors to move between the different pages using a consistent navigation menu and find information about the café and the products it offers. The website has been developed using HTML and organised into separate folders for CSS, JavaScript and images.
+Morgan's Café is a local café website developed as part of the WEDE5020 Web Development (Introduction) project. The website is designed to give customers information about the café, its products, contact details and enquiry options. The website provides a simple and welcoming online presence for Morgan's Café. It allows visitors to move between the different pages using a consistent navigation menu and find information about the café and the products it offers. The website has been developed using HTML and organised into separate folders for CSS, JavaScript and images.
+•Live Website: https://st10529027.github.io/Morgan-s-cafe-Research/
+•SGitHub Repository: https://github.com/ST10529027/Morgan-s-cafe-Research
 
-Website Goals and Objectives
+Project Goals and Objectives
 
 The main goals of the Morgan's Café website are to:
 •Create a professional online presence for the café.
@@ -20,9 +23,10 @@ The main goals of the Morgan's Café website are to:
 •Allow customers to make enquiries through the website.
 •Provide simple and clear navigation between the website pages.
 •Create a welcoming design that matches the atmosphere of the café.
+•Use JavaScript to improve interaction and usability.
+•Publish the website online using GitHub Pages.
 
 Target Audience
-
 The main target audience includes:
 •Local customers looking for food and drinks.
 •Students and young adults.
@@ -31,36 +35,64 @@ The main target audience includes:
 •Existing customers who need contact or enquiry information.
 
 Website Pages
-
 The website contains five main pages:
 •Home: Introduces Morgan's Café and provides an overview of the café.
 •About Us: Provides information about the café, including its story, mission, vision and target audience.
-•Products: Displays the café's food and drink offerings and prices.
-•Enquiry: Allows customers to submit an enquiry about the café.
-•Contact: Provides contact information, opening hours, branches and a contact form.
-
+•Products: Displays the café's food and drink offerings and prices, enhanced with JavaScript search, filtering, and sorting functionality.
+•Enquiry: Allows customers to submit an enquiry about the café, supported by client-side form validation.
+•Contact: Provides contact information, opening hours, branches, map links, and a contact form.
 Key Features and Functionality
-
 The main features included in the website are:
 •Consistent navigation menu across all pages.
 •Home page with a hero section and café introduction.
 •Call-to-action buttons such as "View Menu" and "Make an Enquiry".
 •About Us page containing the café's story, mission and vision.
 •Products page containing food and drink categories and prices using CSS Grid.
-•Enquiry form containing customer information and enquiry fields.
-•Contact page containing contact information, opening hours, branches and a contact form.
-•Images organised into separate folders.
-•CSS stylesheet used for responsive design and layout.
+•Enquiry and contact forms containing customer information, clear fields, and JavaScript validation.
+•Images and videos organised into separate folders.
+•CSS stylesheet used for responsive design, layouts, and media queries.
+•Modular JavaScript files (script.js and validation.js) managing interactivity and form verification.
 •A promotional coffee video created by combining sourced media using CapCut.
 
 Sitemap
-
 The website structure is organised as follows:
-Morgan's Café ├── Home ├── About Us ├── Products ├── Enquiry └── Contact
+Morgan's Café 
+├── Home 
+├── About Us 
+├── Products 
+├── Enquiry 
+└── Contact
 
 File and Folder Structure
-
-Morgan's Café Research/ ├── README.md ├── index.html ├── about-us.html ├── products.html ├── enquiry.html ├── contact.html ├── css/ │ └── styles.css ├── js/ ├── Images/ │ ├── home/ │ │ └── Home_Cafe.jpg.jpg │ ├── about/ │ │ └── About_us_main.jpg.jpg │ ├── products/ │ ├── contact/ │ └── enquiry/ └── Testing Evidence/ ├── Desktop_Test.png ├── Tablet_Test.png └── Mobile_Test.png
+Morgan-s-cafe-Research/
+├── README.md
+├── index.html
+├── about-us.html
+├── products.html
+├── enquiry.html
+├── contact.html
+├── robots.txt
+├── sitemap.xml
+├── Sitemap.txt
+├── .gitattributes
+├── css/
+│   └── styles.css
+├── js/
+│   ├── script.js
+│   └── validation.js
+├── Images/
+│   ├── home/
+│   ├── about/
+│   ├── products/
+│   ├── contact/
+│   └── enquiry/
+├── testing-evidence/
+│   ├── mobile evidence/
+│   ├── tablet evidence/
+│   └── windows evidence/
+└── videos/
+    ├── Project.mp4
+    └── promotion-video.mp4
 
 Part 1 Summary
 
@@ -78,28 +110,17 @@ Part 1 focused on building the foundation of the Morgan's Café website. The wor
 
 Part 1 Feedback Changelog
 
-The following updates were made in Part 2 based on feedback from Part 1:
-•Feedback / Changelog Documentation
-Update: Created this detailed feedback section to document all fixes made to the site.
+The following updates were made based on feedback from Part 1:
 
-Files Updated: README.md
-•Navigation Menu (Mobile)
-Update: Added media queries so the navigation links stack vertically on mobile screens instead of overlapping.
-Files Updated: css/styles.css
-•Form Styling
-Update: Improved form styling by adding padding, borders, and clear focus states to input fields, select menus, and textareas.
-Files Updated: css/styles.css, enquiry.html, contact.html
-•Heading Structure
-Update: Updated product card titles from h2 to h3 to keep a clean heading hierarchy.
-Files Updated: products.html
-•References
-Update: Added code comments with source links in HTML and CSS files, and added a complete Harvard Reference list in the README.
-Files Updated: All HTML files, css/styles.css, README.md
+•Feedback / Changelog Documentation Update: Created this detailed feedback section to document all fixes made to the site. Files Updated: README.md
+•Navigation Menu (Mobile) Update: Added media queries so the navigation links stack vertically on mobile screens instead of overlapping. Files Updated: css/styles.css
+•Form Styling Update: Improved form styling by adding padding, borders, and clear focus states to input fields, select menus, and textareas. Files Updated: css/styles.css, enquiry.html, contact.html
+•Heading Hierarchy Update: Updated product card titles from h2 to h3 to keep a clean heading hierarchy. Files Updated: products.html
+•References Update: Added code comments with source links in HTML and CSS files, and added a complete Harvard Reference list in the README. Files Updated: All HTML files, css/styles.css, README.md
 
 Part 2 Details
+Part 2 focused on CSS styling and responsive design for the Morgan's Café website. The work completed includes:
 
-Part 2 focused on CSS styling and responsive design for the Morgan's Café website.
-The work completed includes:
 •Improved the website styling using the external CSS stylesheet.
 •Improved typography, colours, spacing and page layouts.
 •Used CSS Grid and Flexbox for website layouts.
@@ -110,28 +131,57 @@ The work completed includes:
 •Added responsive image handling using the HTML picture element, source elements and srcset.
 •Tested the website using browser developer tools.
 •Tested the website at desktop, tablet and mobile screen sizes.
+
 Responsive Design Testing
+
 The website was tested at different screen sizes using browser developer tools.
 •Desktop: Tested at desktop size to check the overall layout, navigation, hero section, content sections and spacing.
 •Tablet: Tested at tablet size to check the responsive grid layouts and content arrangement.
-•Mobile: Tested at mobile size to check the single-column layout, vertical navigation menu, text sizing, buttons and form spacing.
-Testing screenshots are saved in the "Testing Evidence" folder (Desktop_Test.png, Tablet_Test.png, Mobile_Test.png).
+•Mobile: Tested at mobile size to check the single-column layout, vertical navigation menu, text sizing, buttons and form spacing. (Testing screenshots are saved in the testing-evidence/ folder.)
+
+Part 3 Details
+
+Part 3 focused on adding JavaScript functionality and interactive behaviour to advance the website beyond static HTML content. The work completed includes:
+
+•Organising JavaScript logic into separate dedicated files (js/script.js and js/validation.js).
+•Adding JavaScript-driven product search, filtering, and sorting capabilities on the Products page.
+•Implementing client-side form validation to check required input fields and data formats prior to submission.
+•Implementing dynamic page updates, including smooth scrolling, back-to-top behavior, and dynamic footer year updates.
+•Integrating map and directions links for the Pretoria CBD and Centurion branches.
+•Ensuring script references and interactive elements operate reliably across desktop, tablet, and mobile viewports.
 
 GitHub Commit Log Summary
 
 The following commits were pushed to GitHub to record development progress:
+
 •style: update CSS layout, typography, form styles, and media queries
 •fix: adjust HTML heading structure and add reference comments
-•docs: update README with Part 1 feedback changelog and references
+•feat: add JavaScript functionality for product search, filtering, and form validation
+•docs: update README with Part 1 feedback changelog and Part 3 enhancements
 
 References
+
 Bohovyk, O. (n.d.) Pexels profile. Pexels. Available at: https://www.pexels.com/@olenkabohovyk/ [Accessed: 14 August 2026].
+
+CapCut. (2026) CapCut video editor and promotional media creation tool. Available at: https://www.capcut.com/ [Accessed: 23 October 2026].
+
+GitHub. (n.d.) GitHub Pages documentation. Available at: https://docs.github.com/en/pages [Accessed: 27 October 2026].
+
+Google. (2026) Google Maps and location services. Available at: https://www.google.com/maps [Accessed: 23 October 2026].
+
+Google. (2026) Google Pictures and image search assets. Available at: https://images.google.com/ [Accessed: 23 October 2026].
 
 MDN Web Docs. (2026) CSS Flexible Box Layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout [Accessed: 17 September 2026].
 
 MDN Web Docs. (2026) CSS Grid Layout. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout [Accessed: 17 September 2026].
 
 MDN Web Docs. (2026) HTML: HyperText Markup Language. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML [Accessed: 7 August 2026].
+
+MDN Web Docs. (2026) JavaScript and DOM Documentation. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript [Accessed: 23 October 2026].
+
+MDN Web Docs. (2026) Client-side form validation. Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation [Accessed: 23 October 2026].
+
+MDN Web Docs. (2026) SEO (Search Engine Optimization) basics. Available at: https://developer.mozilla.org/en-US/docs/Glossary/SEO [Accessed: 23 October 2026].
 
 MDN Web Docs. (2026) Responsive Design. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design [Accessed: 17 September 2026].
 
@@ -141,9 +191,5 @@ Nielsen Norman Group. (2024) User Experience. Available at: https://www.nngroup.
 
 The Independent Institute of Education (IIE). (2026) WEDE5020 Web Development (Introduction): Assessment Brief and Marking Rubric. Pretoria: The IIE.
 
-W3C. (2026) Web Content Accessibility Guidelines (WCAG) 2.1. Available at: https://www.w3.org/TR/WCAG21/ [Accessed: 17 September 2026].
-
-
-
-
+World Wide Web Consortium (W3C). (2026) Web Content Accessibility Guidelines (WCAG) 2.1. Available at: https://www.w3.org/TR/WCAG21/ [Accessed: 17 September 2026].
 
